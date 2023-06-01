@@ -1,0 +1,162 @@
+@import url("https.//font.googleaspis.com/css2?family=Poppins:wgth@200;300;400;500;600;700;800&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input {
+    font-family: 'Poppins', sans-serif;
+}
+
+.contianer{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    overflow: hidden;
+}
+
+.contianer::before{
+    content:'';
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    background: linear-gradient(-45deg, blue, navy, white);
+    top: -10%;
+    right: 48%;
+    transform: translate(-50%);
+}
+
+.form-contianer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.signup{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%);
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 2.2rem;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.input-field{
+    max-width: 300px;
+    width: 100%;
+    height: 55px;
+    background-color: white;
+    margin-top: 10opx 0;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0.4rem;
+}
+
+.input-field i{
+    text-align: center;
+    line-height: 55px;
+}
+
+.input-field input::placeholder{
+    color:grey;
+    font-weight: 500;
+}
+
+.btn{
+    width: 150px;
+    height: 49px;
+    border: none;
+    outline: none;
+    border-radius: 49px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    transition: .5s;
+}
+
+.btn:hover{
+    background-color: blue;
+}
+
+.social-text{
+    padding: .7rem 0;
+    font-size: 1rem;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon{
+    height: 46px;
+    width: 46px;
+    border: 1px solid navy;
+    margin: 0 0.45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: navy;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    transition: 5s;
+}
+
+.social-icon:hover{
+    color: blue;
+    border-color: blue;
+}
+
+.panel-contianer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.left-panel {
+    padding: 3rem 17% 2rem 12%;
+}
+
+.right-panel {
+    padding: 3rem 17% 2rem 12%;
+}
+
+.image {
+    width: 100%;
+}
